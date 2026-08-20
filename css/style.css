@@ -142,10 +142,17 @@ main {
   height: 31px;
 
   object-fit: contain;
-
   display: block;
-
   flex-shrink: 0;
+
+  background: var(--lavender-100);
+
+  padding: 5px;
+
+  border:
+    1px solid rgba(101, 76, 135, 0.10);
+
+  border-radius: 9px;
 }
 
 .brand-name {
@@ -393,7 +400,6 @@ h3 {
 
 .hero-copy {
   position: relative;
-
   z-index: 2;
 }
 
@@ -495,7 +501,6 @@ h3 {
   min-height: 470px;
 
   position: relative;
-
   z-index: 2;
 
   transform: rotate(2deg);
@@ -526,7 +531,6 @@ h3 {
 
 .centered-heading {
   justify-content: center;
-
   text-align: center;
 }
 
@@ -1004,8 +1008,7 @@ h3 {
 }
 
 .site-footer a {
-  color:
-    var(--lavender-700);
+  color: var(--lavender-700);
 }
 
 .footer-meta {
@@ -1091,6 +1094,10 @@ h3 {
   .site-logo {
     width: 27px;
     height: 27px;
+
+    padding: 4px;
+
+    border-radius: 8px;
   }
 
   .brand-name {
