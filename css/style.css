@@ -3,9 +3,9 @@
 */
 
 :root {
-  --lavender-050: #f8f5fc;
-  --lavender-100: #eee7f7;
-  --lavender-200: #dfd2ef;
+  --lavender-050: #f3eef8;
+  --lavender-100: #e9e0f3;
+  --lavender-200: #dcd0eb;
   --lavender-300: #c8b1e3;
   --lavender-500: #9877c2;
   --lavender-700: #654c87;
@@ -42,13 +42,7 @@ html {
 body {
   margin: 0;
 
-  background:
-    radial-gradient(
-      circle at 8% 10%,
-      rgba(223, 210, 239, 0.50),
-      transparent 30rem
-    ),
-    var(--lavender-050);
+  background: var(--lavender-050);
 
   color: var(--ink);
 
@@ -120,7 +114,7 @@ main {
   z-index: 20;
 }
 
-/* Full-width lavender background behind the header */
+/* Full-width lavender header background */
 .site-header::before {
   content: "";
 
@@ -238,7 +232,9 @@ main {
   width: 44px;
   height: 44px;
 
-  border: 1px solid rgba(101, 76, 135, 0.10);
+  border:
+    1px solid rgba(101, 76, 135, 0.10);
+
   border-radius: 14px;
 
   background: var(--lavender-200);
@@ -393,7 +389,7 @@ h3 {
   border-color: var(--border);
 
   background:
-    rgba(255, 255, 255, 0.60);
+    rgba(255, 255, 255, 0.52);
 
   color: var(--lavender-700);
 }
@@ -446,8 +442,6 @@ h3 {
   border-radius:
     46% 54% 61% 39% /
     44% 43% 57% 56%;
-
-  filter: blur(0.2px);
 }
 
 .blob-one {
@@ -467,7 +461,7 @@ h3 {
   bottom: 4%;
 
   background:
-    rgba(200, 177, 227, 0.50);
+    rgba(200, 177, 227, 0.55);
 
   transform: rotate(-24deg);
 }
@@ -501,12 +495,7 @@ h3 {
     34px 24px 38px 28px;
 
   background:
-    linear-gradient(
-      145deg,
-      rgba(255, 255, 255, 0.72),
-      rgba(238, 231, 247, 0.88)
-    ),
-    var(--lavender-100);
+    rgba(255, 255, 255, 0.46);
 
   color:
     rgba(101, 76, 135, 0.55);
@@ -675,7 +664,7 @@ h3 {
     34px 24px 30px 22px;
 
   background:
-    rgba(255, 255, 255, 0.48);
+    rgba(255, 255, 255, 0.38);
 
   text-decoration: none;
 
@@ -756,7 +745,7 @@ h3 {
   border-radius: 50%;
 
   background:
-    rgba(200, 177, 227, 0.50);
+    rgba(200, 177, 227, 0.55);
 }
 
 .cta-panel > * {
@@ -806,7 +795,7 @@ h3 {
     999px;
 
   background:
-    rgba(255, 255, 255, 0.55);
+    rgba(255, 255, 255, 0.42);
 
   color: var(--muted);
 
@@ -1159,7 +1148,7 @@ h3 {
     border-radius: 22px;
 
     background:
-      rgba(238, 231, 247, 0.97);
+      rgba(233, 224, 243, 0.97);
 
     box-shadow:
       var(--shadow);
