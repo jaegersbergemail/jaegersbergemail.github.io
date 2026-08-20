@@ -3,11 +3,11 @@
 */
 
 :root {
-  --lavender-050: #faf8ff;
-  --lavender-100: #f3eefb;
-  --lavender-200: #e5daf5;
-  --lavender-300: #cfb9eb;
-  --lavender-500: #9a79c8;
+  --lavender-050: #f8f5fc;
+  --lavender-100: #eee7f7;
+  --lavender-200: #dfd2ef;
+  --lavender-300: #c8b1e3;
+  --lavender-500: #9877c2;
   --lavender-700: #654c87;
 
   --ink: #2f2a36;
@@ -45,7 +45,7 @@ body {
   background:
     radial-gradient(
       circle at 8% 10%,
-      rgba(229, 218, 245, 0.55),
+      rgba(223, 210, 239, 0.50),
       transparent 30rem
     ),
     var(--lavender-050);
@@ -120,6 +120,28 @@ main {
   z-index: 20;
 }
 
+/* Full-width lavender background behind the header */
+.site-header::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  bottom: 0;
+  left: 50%;
+
+  width: 100vw;
+
+  transform: translateX(-50%);
+
+  background: var(--lavender-100);
+
+  border-bottom:
+    1px solid rgba(101, 76, 135, 0.08);
+
+  z-index: -1;
+}
+
 
 /* -------------------- */
 /* BRAND / LOGO */
@@ -145,12 +167,12 @@ main {
   display: block;
   flex-shrink: 0;
 
-  background: var(--lavender-100);
+  background: var(--lavender-200);
 
   padding: 5px;
 
   border:
-    1px solid rgba(101, 76, 135, 0.10);
+    1px solid rgba(101, 76, 135, 0.12);
 
   border-radius: 9px;
 }
@@ -216,10 +238,10 @@ main {
   width: 44px;
   height: 44px;
 
-  border: 0;
+  border: 1px solid rgba(101, 76, 135, 0.10);
   border-radius: 14px;
 
-  background: var(--lavender-100);
+  background: var(--lavender-200);
 
   padding: 11px;
 
@@ -371,7 +393,7 @@ h3 {
   border-color: var(--border);
 
   background:
-    rgba(255, 255, 255, 0.72);
+    rgba(255, 255, 255, 0.60);
 
   color: var(--lavender-700);
 }
@@ -445,7 +467,7 @@ h3 {
   bottom: 4%;
 
   background:
-    rgba(207, 185, 235, 0.5);
+    rgba(200, 177, 227, 0.50);
 
   transform: rotate(-24deg);
 }
@@ -481,8 +503,8 @@ h3 {
   background:
     linear-gradient(
       145deg,
-      rgba(255, 255, 255, 0.9),
-      rgba(243, 238, 251, 0.82)
+      rgba(255, 255, 255, 0.72),
+      rgba(238, 231, 247, 0.88)
     ),
     var(--lavender-100);
 
@@ -653,7 +675,7 @@ h3 {
     34px 24px 30px 22px;
 
   background:
-    rgba(255, 255, 255, 0.62);
+    rgba(255, 255, 255, 0.48);
 
   text-decoration: none;
 
@@ -672,7 +694,7 @@ h3 {
   transform:
     translateY(-5px);
 
-  background: var(--white);
+  background: var(--lavender-100);
 
   box-shadow: var(--shadow);
 }
@@ -734,7 +756,7 @@ h3 {
   border-radius: 50%;
 
   background:
-    rgba(207, 185, 235, 0.55);
+    rgba(200, 177, 227, 0.50);
 }
 
 .cta-panel > * {
@@ -784,7 +806,7 @@ h3 {
     999px;
 
   background:
-    rgba(255, 255, 255, 0.7);
+    rgba(255, 255, 255, 0.55);
 
   color: var(--muted);
 
@@ -907,7 +929,7 @@ h3 {
   border-radius: 50%;
 
   background:
-    var(--white);
+    var(--lavender-100);
 
   color:
     var(--lavender-700);
@@ -1137,7 +1159,7 @@ h3 {
     border-radius: 22px;
 
     background:
-      rgba(250, 248, 255, 0.96);
+      rgba(238, 231, 247, 0.97);
 
     box-shadow:
       var(--shadow);
@@ -1163,7 +1185,7 @@ h3 {
 
   .site-nav a.active {
     background:
-      var(--lavender-100);
+      var(--lavender-200);
   }
 
   h1 {
