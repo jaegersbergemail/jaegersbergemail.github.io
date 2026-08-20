@@ -1,1 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <meta
+    name="description"
+    content="Explore the art portfolio of Charlotte Jägersberg by technique."
+  >
+
+  <title>Portfolio | Charlotte Jägersberg</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Charlotte Jägersberg home">
+      <span class="logo-placeholder" aria-hidden="true">LOGO</span>
+      <span class="brand-name">Charlotte Jägersberg</span>
+    </a>
+
+    <button
+      class="menu-toggle"
+      type="button"
+      aria-label="Open navigation"
+      aria-expanded="false"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a class="active" href="portfolio.html">Portfolio</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-intro section-shell">
+      <p class="eyebrow">Portfolio</p>
+
+      <h1>Explore the collection.</h1>
+
+      <p>
+        Filter the gallery by technique to discover work created across different
+        materials and processes.
+      </p>
+    </section>
+
+    <section class="portfolio-section section-shell">
+      <div class="filter-wrap" aria-label="Filter artwork by technique">
+        <button
+          class="filter-button active"
+          type="button"
+          data-filter="all"
+        >
+          All
+        </button>
+
+        <button
+          class="filter-button"
+          type="button"
+          data-filter="watercolor"
+        >
+          Watercolor
+        </button>
+
+        <button
+          class="filter-button"
+          type="button"
+          data-filter="acrylic"
+        >
+          Acrylic
+        </button>
+
+        <button
+          class="filter-button"
+          type="button"
+          data-filter="screenprinting"
+        >
+          Screenprinting
+        </button>
+
+        <button
+          class="filter-button"
+          type="button"
+          data-filter="alcohol-markers"
+        >
+          Alcohol Markers
+        </button>
+      </div>
+
+      <div
+        id="portfolioGrid"
+        class="art-grid portfolio-grid"
+        aria-live="polite"
+      ></div>
+
+      <p id="emptyState" class="empty-state" hidden>
+        No artwork is currently listed in this category.
+      </p>
+    </section>
+  </main>
+
+  <div
+    class="lightbox"
+    id="lightbox"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="lightboxTitle"
+    hidden
+  >
+    <button
+      class="lightbox-close"
+      type="button"
+      aria-label="Close artwork preview"
+    >
+      ×
+    </button>
+
+    <div class="lightbox-content">
+      <div
+        id="lightboxImage"
+        class="image-placeholder lightbox-image"
+      >
+        image1
+      </div>
+
+      <div class="lightbox-copy">
+        <p class="eyebrow" id="lightboxMedium">
+          Watercolor
+        </p>
+
+        <h2 id="lightboxTitle">
+          Artwork Title
+        </h2>
+
+        <p id="lightboxDescription">
+          Artwork description placeholder.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div>
+      <strong>Charlotte Jägersberg</strong>
+
+      <a href="mailto:JaegersbergEmail@gmail.com">
+        JaegersbergEmail@gmail.com
+      </a>
+    </div>
+
+    <div class="footer-meta">
+      <span>
+        © <span data-year></span> Charlotte Jägersberg
+      </span>
+
+      <span class="designer-credit">
+        Designed by Reynaldo Castro
+      </span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/portfolio.js"></script>
+</body>
+</html>
