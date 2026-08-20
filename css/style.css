@@ -129,7 +129,7 @@ main {
   display: inline-flex;
   align-items: center;
 
-  gap: 12px;
+  gap: 10px;
 
   text-decoration: none;
 
@@ -138,8 +138,8 @@ main {
 }
 
 .site-logo {
-  width: 46px;
-  height: 46px;
+  width: 31px;
+  height: 31px;
 
   object-fit: contain;
 
@@ -1032,7 +1032,6 @@ h3 {
 /* -------------------- */
 
 @media (max-width: 900px) {
-
   .hero,
   .contact-page {
     grid-template-columns: 1fr;
@@ -1075,7 +1074,6 @@ h3 {
 /* -------------------- */
 
 @media (max-width: 700px) {
-
   .site-header,
   .site-footer,
   .section-shell {
@@ -1091,8 +1089,8 @@ h3 {
   }
 
   .site-logo {
-    width: 40px;
-    height: 40px;
+    width: 27px;
+    height: 27px;
   }
 
   .brand-name {
@@ -1235,7 +1233,6 @@ h3 {
 /* -------------------- */
 
 @media (max-width: 520px) {
-
   .featured-grid,
   .portfolio-grid {
     grid-template-columns: 1fr;
