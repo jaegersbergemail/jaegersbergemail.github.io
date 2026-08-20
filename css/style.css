@@ -1,5 +1,5 @@
 /* Charlotte Jägersberg Portfolio
-   Professional lavender design with soft shapes.
+   Soft lavender, minimal, responsive design
 */
 
 :root {
@@ -25,6 +25,11 @@
 
   --page-width: 1180px;
 }
+
+
+/* -------------------- */
+/* BASE */
+/* -------------------- */
 
 * {
   box-sizing: border-box;
@@ -77,7 +82,14 @@ img {
   max-width: 100%;
 }
 
-/* Main page sizing */
+main {
+  overflow: clip;
+}
+
+
+/* -------------------- */
+/* PAGE WIDTH */
+/* -------------------- */
 
 .site-header,
 .site-footer,
@@ -90,7 +102,10 @@ img {
   margin-inline: auto;
 }
 
-/* Navigation */
+
+/* -------------------- */
+/* HEADER */
+/* -------------------- */
 
 .site-header {
   min-height: 86px;
@@ -105,6 +120,11 @@ img {
   z-index: 20;
 }
 
+
+/* -------------------- */
+/* BRAND / LOGO */
+/* -------------------- */
+
 .brand {
   display: inline-flex;
   align-items: center;
@@ -117,29 +137,25 @@ img {
   letter-spacing: -0.02em;
 }
 
-.logo-placeholder {
+.site-logo {
   width: 46px;
   height: 46px;
 
-  display: grid;
-  place-items: center;
+  object-fit: contain;
 
-  border: 1px dashed var(--lavender-500);
+  display: block;
 
-  border-radius:
-    15px 19px 14px 21px;
-
-  background: var(--lavender-100);
-
-  color: var(--lavender-700);
-
-  font-size: 0.63rem;
-  letter-spacing: 0.08em;
+  flex-shrink: 0;
 }
 
 .brand-name {
   font-size: 1.03rem;
 }
+
+
+/* -------------------- */
+/* DESKTOP NAVIGATION */
+/* -------------------- */
 
 .site-nav {
   display: flex;
@@ -182,7 +198,10 @@ img {
   background: var(--lavender-500);
 }
 
-/* Mobile nav button */
+
+/* -------------------- */
+/* MOBILE MENU BUTTON */
+/* -------------------- */
 
 .menu-toggle {
   display: none;
@@ -213,11 +232,10 @@ img {
   border-radius: 999px;
 }
 
-main {
-  overflow: clip;
-}
 
-/* Typography */
+/* -------------------- */
+/* TYPOGRAPHY */
+/* -------------------- */
 
 .eyebrow {
   margin: 0 0 14px;
@@ -293,7 +311,10 @@ h3 {
   font-size: 1.05rem;
 }
 
-/* Buttons */
+
+/* -------------------- */
+/* BUTTONS */
+/* -------------------- */
 
 .button-row {
   display: flex;
@@ -348,7 +369,10 @@ h3 {
   color: var(--lavender-700);
 }
 
-/* Home hero */
+
+/* -------------------- */
+/* HOME HERO */
+/* -------------------- */
 
 .hero {
   min-height: 660px;
@@ -369,6 +393,7 @@ h3 {
 
 .hero-copy {
   position: relative;
+
   z-index: 2;
 }
 
@@ -382,7 +407,10 @@ h3 {
   position: relative;
 }
 
-/* Soft lavender background shapes */
+
+/* -------------------- */
+/* SOFT BACKGROUND SHAPES */
+/* -------------------- */
 
 .soft-blob {
   position: absolute;
@@ -398,8 +426,7 @@ h3 {
   width: 460px;
   height: 460px;
 
-  background:
-    var(--lavender-200);
+  background: var(--lavender-200);
 
   transform: rotate(12deg);
 }
@@ -421,13 +448,15 @@ h3 {
   width: 410px;
   height: 410px;
 
-  background:
-    var(--lavender-200);
+  background: var(--lavender-200);
 
   transform: rotate(-10deg);
 }
 
-/* Placeholder artwork */
+
+/* -------------------- */
+/* IMAGE PLACEHOLDERS */
+/* -------------------- */
 
 .image-placeholder {
   min-height: 310px;
@@ -466,12 +495,16 @@ h3 {
   min-height: 470px;
 
   position: relative;
+
   z-index: 2;
 
   transform: rotate(2deg);
 }
 
-/* Sections */
+
+/* -------------------- */
+/* GENERAL SECTIONS */
+/* -------------------- */
 
 .featured,
 .techniques,
@@ -493,11 +526,11 @@ h3 {
 
 .centered-heading {
   justify-content: center;
+
   text-align: center;
 }
 
-.centered-heading
-.section-description {
+.centered-heading .section-description {
   margin-inline: auto;
 }
 
@@ -515,7 +548,10 @@ h3 {
   text-decoration: underline;
 }
 
-/* Artwork cards */
+
+/* -------------------- */
+/* ARTWORK GRID */
+/* -------------------- */
 
 .art-grid {
   display: grid;
@@ -533,8 +569,7 @@ h3 {
   min-width: 0;
 }
 
-.art-card
-.image-placeholder {
+.art-card .image-placeholder {
   width: 100%;
 
   aspect-ratio: 4 / 5;
@@ -553,7 +588,10 @@ h3 {
   font-size: 0.92rem;
 }
 
-/* Portfolio clickable card */
+
+/* -------------------- */
+/* PORTFOLIO CARD */
+/* -------------------- */
 
 .portfolio-card {
   cursor: pointer;
@@ -577,7 +615,10 @@ h3 {
   font: inherit;
 }
 
-/* Technique cards */
+
+/* -------------------- */
+/* TECHNIQUE CARDS */
+/* -------------------- */
 
 .techniques {
   position: relative;
@@ -642,13 +683,15 @@ h3 {
 }
 
 .technique-card small {
-  color:
-    var(--lavender-700);
+  color: var(--lavender-700);
 
   font-weight: 700;
 }
 
-/* Contact CTA */
+
+/* -------------------- */
+/* CONTACT CTA */
+/* -------------------- */
 
 .cta-panel {
   min-height: 260px;
@@ -702,7 +745,10 @@ h3 {
   color: var(--muted);
 }
 
-/* Portfolio page */
+
+/* -------------------- */
+/* PORTFOLIO PAGE */
+/* -------------------- */
 
 .page-intro {
   padding-block:
@@ -736,39 +782,46 @@ h3 {
   background:
     rgba(255, 255, 255, 0.7);
 
-  color:
-    var(--muted);
+  color: var(--muted);
 
   font: inherit;
-
   font-weight: 700;
 
   cursor: pointer;
+
+  transition:
+    background 160ms ease,
+    color 160ms ease,
+    border-color 160ms ease,
+    transform 160ms ease;
+}
+
+.filter-button:hover {
+  transform: translateY(-1px);
 }
 
 .filter-button:hover,
 .filter-button.active {
-  border-color:
-    var(--lavender-700);
+  border-color: var(--lavender-700);
 
-  background:
-    var(--lavender-700);
+  background: var(--lavender-700);
 
-  color:
-    var(--white);
+  color: var(--white);
 }
 
 .empty-state {
   padding:
     60px 0;
 
-  color:
-    var(--muted);
+  color: var(--muted);
 
   text-align: center;
 }
 
-/* Artwork lightbox */
+
+/* -------------------- */
+/* ARTWORK LIGHTBOX */
+/* -------------------- */
 
 .lightbox[hidden] {
   display: none;
@@ -864,7 +917,10 @@ h3 {
     var(--shadow);
 }
 
-/* Contact page */
+
+/* -------------------- */
+/* CONTACT PAGE */
+/* -------------------- */
 
 .contact-page {
   min-height:
@@ -906,9 +962,14 @@ h3 {
   font-weight: 700;
 
   text-underline-offset: 5px;
+
+  overflow-wrap: anywhere;
 }
 
-/* Footer */
+
+/* -------------------- */
+/* FOOTER */
+/* -------------------- */
 
 .site-footer {
   min-height: 150px;
@@ -927,8 +988,7 @@ h3 {
   border-top:
     1px solid var(--border);
 
-  color:
-    var(--muted);
+  color: var(--muted);
 
   font-size: 0.88rem;
 }
@@ -966,9 +1026,13 @@ h3 {
   letter-spacing: 0.025em;
 }
 
-/* Tablet */
+
+/* -------------------- */
+/* TABLET */
+/* -------------------- */
 
 @media (max-width: 900px) {
+
   .hero,
   .contact-page {
     grid-template-columns: 1fr;
@@ -1005,9 +1069,13 @@ h3 {
   }
 }
 
-/* Mobile */
+
+/* -------------------- */
+/* MOBILE */
+/* -------------------- */
 
 @media (max-width: 700px) {
+
   .site-header,
   .site-footer,
   .section-shell {
@@ -1022,18 +1090,15 @@ h3 {
     min-height: 74px;
   }
 
+  .site-logo {
+    width: 40px;
+    height: 40px;
+  }
+
   .brand-name {
     max-width: 170px;
 
     line-height: 1.1;
-  }
-
-  .logo-placeholder {
-    width: 40px;
-    height: 40px;
-
-    border-radius:
-      13px 17px 12px 18px;
   }
 
   .menu-toggle {
@@ -1164,9 +1229,13 @@ h3 {
   }
 }
 
-/* Small phones */
+
+/* -------------------- */
+/* SMALL PHONES */
+/* -------------------- */
 
 @media (max-width: 520px) {
+
   .featured-grid,
   .portfolio-grid {
     grid-template-columns: 1fr;
@@ -1180,8 +1249,11 @@ h3 {
     min-height: 125px;
   }
 
-  .button-row,
-  .button {
+  .button-row {
+    width: 100%;
+  }
+
+  .button-row .button {
     width: 100%;
   }
 
@@ -1210,5 +1282,9 @@ h3 {
   .lightbox-close {
     top: 12px;
     right: 12px;
+  }
+
+  .contact-email {
+    font-size: 1rem;
   }
 }
