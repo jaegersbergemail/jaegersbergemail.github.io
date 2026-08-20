@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "title": "Artwork Title 1",
+    "medium": "watercolor",
+    "mediumLabel": "Watercolor",
+    "image": "image1",
+    "description": "Artwork description placeholder. Replace this text when final artwork details are available."
+  },
+  {
+    "id": 2,
+    "title": "Artwork Title 2",
+    "medium": "acrylic",
+    "mediumLabel": "Acrylic",
+    "image": "image2",
+    "description": "Artwork description placeholder. Replace this text when final artwork details are available."
+  },
+  {
+    "id": 3,
+    "title": "Artwork Title 3",
+    "medium": "screenprinting",
+    "mediumLabel": "Screenprinting",
+    "image": "image3",
+    "description": "Artwork description placeholder. Replace this text when final artwork details are available."
+  },
+  {
+    "id": 4,
+    "title": "Artwork Title 4",
+    "medium": "alcohol-markers",
+    "mediumLabel": "Alcohol Markers",
+    "image": "image4",
+    "description": "Artwork description placeholder. Replace this text when final artwork details are available."
+  },
+  {
+    "id": 5,
+    "title": "Artwork Title 5",
+    "medium": "watercolor",
+    "mediumLabel": "Watercolor",
+    "image": "image5",
+    "description": "Artwork description placeholder. Replace this text when final artwork details are available."
+  },
+  {
+    "id": 6,
+    "title": "Artwork Title 6",
+    "medium": "acrylic",
+    "mediumLabel": "Acrylic",
+    "image": "image6",
+    "description": "Artwork description placeholder. Replace this text when final artwork details are available."
+  },
+  {
+    "id": 7,
+    "title": "Artwork Title 7",
+    "medium": "screenprinting",
+    "mediumLabel": "Screenprinting",
+    "image": "image7",
+    "description": "Artwork description placeholder. Replace this text when final artwork details are available."
+  },
+  {
+    "id": 8,
+    "title": "Artwork Title 8",
+    "medium": "alcohol-markers",
+    "mediumLabel": "Alcohol Markers",
+    "image": "image8",
+    "description": "Artwork description placeholder. Replace this text when final artwork details are available."
+  }
+]
